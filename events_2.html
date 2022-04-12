@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Changing the Style</title>
+	</head>
+	<style>
+		.closed {
+			display: none;
+		}
+		.open {
+			display: block;
+		}
+		button {
+			border: 2px solid rgb(161, 161, 161);
+			background-color: rgba(0, 255, 255, 0.918);
+			text-align: center;
+			margin: auto;
+			width: 180px;
+			height: 50px;
+		}
+		button:hover {
+			background-color: rgba(47, 120, 255, 0.315);
+			border: 4px solid #008cff;
+		}
+		#box {
+			color: white;
+			background-color: #7f7f7f;
+			padding: 10px;
+			font-size: 120%;
+			width: 40%;
+		}
+	</style>
+
+	<script>
+		function openMe() {
+			//Finding the element
+			var element = document.getElementById("box");
+			// option 1 changing the style attribute directly (harcoding the value)
+			//element.style.display="block";
+
+			// Option 2 changing the class
+			element.className = "open";
+		}
+		function closeMe() {
+			//Finding the element
+			var element = document.getElementById("box");
+			// option 1 changing the style attribute directly (harcoding the value)
+			// element.style.display='none';
+
+			// Option 2 changing the class
+			element.className = "closed";
+		}
+	</script>
+	<body>
+		<h1>Changing the style</h1>
+		<p>Javascript can change the style of the html element</p>
+		<button type="button" onclick="openMe()">Open!</button>
+		<button type="button" onclick="closeMe()">Close!</button>
+		<p id="box">
+			You can open or close the box by clicking the buttons above
+		</p>
+	</body>
+</html>

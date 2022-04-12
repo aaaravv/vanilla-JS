@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Variables demo</title>
+	</head>
+	<body>
+		<p>
+			save this file somewhere different on your machine. See what happens
+			to the link that prints out the URI
+		</p>
+		<p>what happens if you forget the scripts tag?</p>
+		<script>
+			var name;
+			name = prompt("whats is your name?");
+			document.write(name);
+			document.write("<h1>" + name + "</h1>");
+			document.write(document.baseURI + "<br/>");
+			document.write(document.title + "<br/>");
+		</script>
+	</body>
+</html>

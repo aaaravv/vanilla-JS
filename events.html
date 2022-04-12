@@ -1,0 +1,50 @@
+<html <!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8" />
+			<title>Modifying the DOM</title>
+			<style>
+				button {
+					background-color: #00ffff;
+					border-color: #c9c9c9;
+					height: 30px;
+					width: 150px;
+				}
+
+				#stuff {
+					background-color: #adadad;
+					color: rgb(255, 255, 255);
+					text-align: center;
+				}
+				p {
+					margin-top: 35px;
+					border: 3px solid #000000;
+					text-align: center;
+					width: 280px;
+					color: rgb(0, 0, 0);
+					background-color: rgb(224, 224, 224);
+				}
+			</style>
+		</head>
+		<body>
+			<h1>Modifying the DOM</h1>
+			<button
+				onclick="document.getElementById('stuff').innerHTML='Clicked First Button'"
+				;
+			>
+				First
+			</button>
+
+			<button
+				onclick="document.getElementById('stuff').innerHTML='Clicked Second Button'"
+				;
+			>
+				Second
+			</button>
+
+			<p>This code should'nt change.</p>
+			<p id="stuff">This will change.</p>
+			<p>This code should'nt change either.</p>
+		</body>
+	</html>
+</html>

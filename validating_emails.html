@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Validating Emails</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/validating_email.css">
+        <script src="Javascript/validating_emai.js" ></script>
+    </head>
+    <body>
+        <form>
+            <label>Preferred email address:
+                    <inpaut type="email" id="email_addr" name="email1" value = "me@me.com" required></label>
+          
+                <label></br>Repeat email address:
+                    <input type="email" id="email_repeat" name="email2" required onchange="returncheck()"></label>
+                </br>
+            <input type = 'submit' value = "Confirm Emails!"
+           onclick="returncheck();" >
+          </form>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>This</title>
+		<meta name="description" content="" />
+		<link rel="stylesheet" href="css/this.css" />
+		<script src="Javascript/this.js"></script>
+	</head>
+	<body>
+		<div id="message">Hover over an image to display the alt text.</div>
+
+		<img
+			class="preview"
+			alt="This is an apple"
+			src="images/apple.jpg"
+			onmouseover="changeproperties(this)"
+			onmouseleave="undo();"
+		/>
+
+		<img
+			class="preview"
+			alt="This is an orange"
+			src="images/orange.jpg"
+			onmouseover="changeproperties(this)"
+			onmouseleave="undo();"
+		/>
+
+		<img
+			class="preview"
+			alt="This is grapes"
+			src="images/grapes.jpg"
+			onmouseover="changeproperties(this)"
+			onmouseleave="undo();"
+		/>
+	</body>
+</html>
